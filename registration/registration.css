@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+*{
+    font-family: 'Crimson Text', serif;
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+body{
+    background-image:url(/images/top-view-food-frame-with-copy-space.jpg);
+    background-size:cover; 
+}
+
+header .navbar a{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+}
+
+
+header .logo{
+    color: red;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color: #fec107;
+    height: auto;
+}
+
+
+.wrapper{
+    max-width: 500px;
+    width: 100%;
+    background-color: #0005;
+    border-radius: 30px;
+    margin: 20px auto;
+    margin-top: 90px;
+    padding: 30px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+    
+    
+}
+.wrapper .title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #fec107;
+    text-transform: uppercase;
+    text-align: center;
+}
+.wrapper .form{
+    width: 100%;
+}
+.wrapper .form .input-field
+{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.wrapper .form .input-field label{
+    width: 200px;
+    color: #faedcd;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.wrapper .form .input-field .input,
+.wrapper .form .input-field .textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    color: #ff9100;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    background-color: #0002;
+}
+.wrapper .form .input-field .textarea{
+    resize: none;
+    height: 100px;
+
+}
+.wrapper .form .input-field .custom-selection{
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+.wrapper .form .input-field .custom-selection select{
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #d5dbd9;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 3px;
+    outline: none;
+    background-color: #0002;
+    color: #ff9100;
+}
+.wrapper .form .input-field .custom-selection::before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+}
+.wrapper .form .input-field .input:focus,
+.wrapper .form .input-field .textarea:focus,
+.wrapper .form .input-field select:focus{
+    border: 1px solid #e9c46a;
+}
+.wrapper .form .input-field p{
+    font-size: 14px;
+    color: #faedcd;
+}
+.wrapper .form .input-field .check{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+.wrapper .form .input-field .check input[type="checkbox"]
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.wrapper .form .input-field .check .checkmark{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fec107;
+    display: block;
+    position: relative;
+}
+.wrapper .form .input-field .check .checkmark:before{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 5px;
+    height: 2px;
+    border: 2px solid;
+    border-color: transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+    display: none;
+}
+.wrapper .form .input-field .check input[type="checkbox"]:checked ~ .checkmark{
+    background: #fec107;
+}
+.wrapper .form .input-field .check input[type="checkbox"]:checked ~ .checkmark:before{
+    display: block;
+}
+.wrapper .form .input-field .btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background:#0f4c5c;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    text-align: center;
+}
+.wrapper .form .input-field:last-child{
+    margin-bottom: 0;
+}
+.wrapper .form .input-field .btn:hover{
+    background: #840032;
+}
+
+
+
+
+
